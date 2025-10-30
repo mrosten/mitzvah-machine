@@ -1,6 +1,5 @@
 
-import { Image } from 'expo-image';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Link } from 'expo-router';
 
 import { ThemedText } from '@/components/themed-text';
@@ -10,12 +9,8 @@ export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.header}>
-        <Image
-          source={require('@/assets/images/icon.png')}
-          style={styles.logo}
-        />
         <ThemedText type="title" style={styles.title}>
-          Welcome to the Mitzvah Machine!
+          Welcome to the Moshe Mitzvah Machine!
         </ThemedText>
       </View>
       <View style={styles.navigation}>
@@ -49,11 +44,6 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     marginBottom: 30,
-  },
-  logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 20,
   },
   title: {
     fontSize: 28,
